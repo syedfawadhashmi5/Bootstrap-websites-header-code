@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.section_navber nav .navbar-brand {
+    background-color: #fff;
+}
+
+
+.section_navber nav ul li a{
+    color: #fff !important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 21px;
+}
+
+.section_navber nav ul li a:active{
+    color: #eef106 !important;
+}
+
+.section_navber nav ul li a:hover{
+    color: #e5fa6d !important;
+}
+
+.navbar-light .navbar-toggler {
+    background-color: #ffff;
+}
+
+/* for tranprent header inside banner */
+
+/* .section_navber {
+    position: absolute;
+    left: 0;
+    right: 0;
+} */
+
+/* banner section */
+
+.banner_section .backgound_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./1738.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 31em;
+}
+
+
+/* work for mobile */
+
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 375px) and (max-width: 767px) {
+    
+    .navbar-nav {
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    .nav-item {
+        border-bottom: 1px solid #0a58ca;
+    }
+    
+    .section_navber nav ul li a:hover{
+        color: #ffffff !important;
+        background: #0a58ca;
+        padding: 5px 0;
+    }
+
+    .banner_section .backgound_img {
+        height: 10em;
+    }
+
+    .navbar {
+        position: absolute !important;
+        left: 0;
+        right: 0;
+        z-index: 999;
+    }
+  } 
+ 
+  
